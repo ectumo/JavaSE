@@ -1,0 +1,2 @@
+INDEX VERSION 1.130+H:\ProjectExamination\.metadata\.plugins\org.eclipse.jdt.core
+2363336037.index

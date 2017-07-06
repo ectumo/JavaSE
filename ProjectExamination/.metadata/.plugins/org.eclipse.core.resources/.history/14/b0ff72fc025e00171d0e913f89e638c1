@@ -1,0 +1,42 @@
+package com.ectumotech.upd.modell;
+
+import java.util.ArrayList;
+
+import javax.swing.text.AttributeSet.CharacterAttribute;
+
+public class Data extends DataTable{
+	ArrayList<Object> data;
+	
+	public Data(Object object) {
+		data = (ArrayList<Object>) object;
+	}
+
+	void showAll(String ...args){
+
+		for (String choice : args) {
+			switch (choice) {
+			case "id":
+				break;
+			case "name":
+				break;
+			default:
+				break;
+			}
+		}
+		
+		
+		
+		
+		
+		System.out.format("%-4d%-10s%-4s%-10s%-4s%10s",
+				id,
+				student.getName(),
+				student.getStatus(),
+				teacher.getName(),
+				teacher.getStatus(),
+				classRoom.getID());
+	}
+	public void create(Object ...objects) {
+		
+	}
+}

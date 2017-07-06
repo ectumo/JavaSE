@@ -1,0 +1,68 @@
+package com.ectumotech.upd;
+
+import com.ectumotech.upd.controll.MaintainaceOper;
+import com.ectumotech.upd.uil.Menu;
+import com.ectumotech.upd.uil.MenuOption;
+import com.ectumotech.upd.uil.UIshow;
+
+public class Initdata {
+	private static Menu main;
+	private static Menu subview;
+	private static Menu subTeacher;
+	private static Menu subStudent;
+	
+public Initdata() {
+		
+		MenuOption opback = new MenuOption(0,"返回上一层");
+		MenuOption opexit = new MenuOption(0,"退出数据库");
+		MenuOption opm1 = new MenuOption(1,"查看数据库信息");
+		MenuOption opm2 = new MenuOption(2,"查询数据库信息");
+		MenuOption opm3 = new MenuOption(3,"修改数据库信息");
+		MenuOption opm4 = new MenuOption(4,"保存数据库信息");
+		MenuOption opm5 = new MenuOption(5,"清空数据库信息");
+		MenuOption opm6 = new MenuOption(6,"下载数据库信息");
+		/**
+		 * 主菜单
+		 */
+		 main = new Menu(opm1,opm2,opm3,opm4,opm5,opm6,opexit);
+		/**
+		 * 查看子菜单
+		 */
+		MenuOption ops1 = new MenuOption(1,"查看所有老师");
+		MenuOption ops2 = new MenuOption(2,"查看所有学生");
+		MenuOption ops3 = new MenuOption(3,"查看所有班级");
+		subview = new Menu(ops1,ops2,ops3,opback);
+		/**
+		 * 教师子菜单
+		 */
+		MenuOption ops11 = new MenuOption(1,"新增老师");
+		MenuOption ops12 = new MenuOption(2,"辞退老师");
+		MenuOption ops13 = new MenuOption(3,"指定授课班级");
+		subTeacher = new Menu(ops11,ops12,ops13,opback);
+		/**
+		 * 学生子菜单
+		 */
+		MenuOption ops21 = new MenuOption(1,"新增学生");
+		MenuOption ops22 = new MenuOption(2,"劝退学生");
+		MenuOption ops23 = new MenuOption(3,"分配班级");
+		subStudent = new Menu(ops21,ops22,ops23,opback);	
+	}
+
+		public static Menu getMain() {
+		
+			return main;
+		}
+		
+		public static Menu getSubview() {
+			return subview;
+		}
+		
+		public static Menu getSubTeacher() {
+			return subTeacher;
+		}
+		
+		public static Menu getSubStudent() {
+			return subStudent;
+		}
+
+}

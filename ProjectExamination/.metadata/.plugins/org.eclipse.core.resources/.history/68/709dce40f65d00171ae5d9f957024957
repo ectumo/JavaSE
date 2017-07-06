@@ -1,0 +1,74 @@
+package com.ectumotech.upd;
+
+import com.ectumotech.upd.modell.Course;
+import com.ectumotech.upd.modell.Table;
+import com.ectumotech.upd.modell.DataDepot;
+import com.ectumotech.upd.modell.Student;
+import com.ectumotech.upd.modell.StudyPlace;
+import com.ectumotech.upd.modell.Teacher;
+
+public class TestDBrecords {
+	public static void main(String[] args) {
+		
+	}
+	void initData() {
+		Student stu1 = new Student(1,"朱林", true);
+		Student stu2 = new Student(2,"冯永政", true);
+		Student stu3 = new Student(3,"袁文彬", true);
+		Student stu4 = new Student(4,"刘金祥", true);
+		Student stu5 = new Student(5,"韩亚男", true);
+		Student stu6 = new Student(6,"张克周", true);
+		Student stu7 = new Student(7,"余康康", true);
+		Student stu8 = new Student(8,"陈城 ", true);
+		Student stu9 = new Student(9,"陈超", true);
+		Student stu10 = new Student(10,"程炜 ", true);
+		Student stu11 = new Student(11,"林永青 ", true);
+		Student stu12 = new Student(12,"郭创创 ", true);
+		Student stu13 = new Student(13,"高俊辉 ", true);
+		Student stu14 = new Student(14,"杨勇 ", true);
+		Teacher tea1 = new Teacher(1,"陈齐", true);
+		Teacher tea2 = new Teacher(2,"马云", true);
+		Teacher tea3 = new Teacher(3,"马化腾", true);
+		Teacher tea4 = new Teacher(4,"李彦宏", true);
+		Teacher tea5 = new Teacher(5,"丁磊", true);
+		Teacher tea6 = new Teacher(6,"张朝阳", true);
+		StudyPlace room1 = new StudyPlace("JAVA培训基础班");
+		StudyPlace room2 = new StudyPlace("JAVA培训高级班");
+		StudyPlace room3 = new StudyPlace("JAVA培训极限班");
+		StudyPlace room4 = new StudyPlace("JAVA培训终极班");
+		Course c1 = new Course("JavaSE");
+		Course c2 = new Course("JavaEE");
+		Course c3 = new Course("Oracle");
+		Course c4 = new Course("html");
+		Course c5 = new Course("css");
+		Course c6 = new Course("jquery");
+		Course c7 = new Course("");
+		Table d1 = new Table(1,stu1, tea1, room1);
+		Table d2 = new Table(2,stu2, tea1, room1);
+		Table d3 = new Table(3,stu3, tea1, room1);
+		Table d4 = new Table(4,stu4, tea2, room2);
+		Table d5 = new Table(5,stu5, tea2, room2);
+		Table d6 = new Table(6,stu6, tea2, room2);
+		Table d7 = new Table(7,stu7, tea3, room3);
+		Table d8 = new Table(8,stu8, tea3, room3);
+		Table d9 = new Table(9,stu9, tea3, room3);
+		Table d10 = new Table(10,stu10, tea5, room4);
+		Table d11 = new Table(11,stu11, tea5, room4);
+		Table d12 = new Table(12,stu12, tea5, room4);
+		Table d13= new Table(13,stu13, tea6, room4);
+		Table d14= new Table(14,stu14, tea6, room4);
+		
+		
+		DataDepot DB1 = new DataDepot();
+		
+		for (int i = 0; i < 14; i++) {
+			
+		}
+		
+		
+		
+		
+		
+		
+	}
+}

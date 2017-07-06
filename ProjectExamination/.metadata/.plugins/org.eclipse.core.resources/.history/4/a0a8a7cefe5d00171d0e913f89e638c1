@@ -1,0 +1,74 @@
+package com.ectumotech.upd;
+
+import com.ectumotech.upd.modell.Course;
+import com.ectumotech.upd.modell.DataTable;
+import com.ectumotech.upd.modell.DataDepot;
+import com.ectumotech.upd.modell.Student;
+import com.ectumotech.upd.modell.ClassRoom;
+import com.ectumotech.upd.modell.Teacher;
+
+public class TestDBrecords {
+	public static void main(String[] args) {
+		
+	}
+	void initData() {
+		Student stu1 = new Student(1,"ÖìÁÖ", true);
+		Student stu2 = new Student(2,"·ëÓÀÕş", true);
+		Student stu3 = new Student(3,"Ô¬ÎÄ±ò", true);
+		Student stu4 = new Student(4,"Áõ½ğÏé", true);
+		Student stu5 = new Student(5,"º«ÑÇÄĞ", true);
+		Student stu6 = new Student(6,"ÕÅ¿ËÖÜ", true);
+		Student stu7 = new Student(7,"Óà¿µ¿µ", true);
+		Student stu8 = new Student(8,"³Â³Ç ", true);
+		Student stu9 = new Student(9,"³Â³¬", true);
+		Student stu10 = new Student(10,"³Ìì¿ ", true);
+		Student stu11 = new Student(11,"ÁÖÓÀÇà ", true);
+		Student stu12 = new Student(12,"¹ù´´´´ ", true);
+		Student stu13 = new Student(13,"¸ß¿¡»Ô ", true);
+		Student stu14 = new Student(14,"ÑîÓÂ ", true);
+		Teacher tea1 = new Teacher(1,"³ÂÆë", true);
+		Teacher tea2 = new Teacher(2,"ÂíÔÆ", true);
+		Teacher tea3 = new Teacher(3,"Âí»¯ÌÚ", true);
+		Teacher tea4 = new Teacher(4,"ÀîÑåºê", true);
+		Teacher tea5 = new Teacher(5,"¶¡ÀÚ", true);
+		Teacher tea6 = new Teacher(6,"ÕÅ³¯Ñô", true);
+		ClassRoom room1 = new ClassRoom("JAVAÅàÑµ»ù´¡°à");
+		ClassRoom room2 = new ClassRoom("JAVAÅàÑµ¸ß¼¶°à");
+		ClassRoom room3 = new ClassRoom("JAVAÅàÑµ¼«ÏŞ°à");
+		ClassRoom room4 = new ClassRoom("JAVAÅàÑµÖÕ¼«°à");
+		Course c1 = new Course("JavaSE");
+		Course c2 = new Course("JavaEE");
+		Course c3 = new Course("Oracle");
+		Course c4 = new Course("html");
+		Course c5 = new Course("css");
+		Course c6 = new Course("jquery");
+		Course c7 = new Course("");
+		DataTable d1 = new DataTable(1,stu1, tea1, room1);
+		DataTable d2 = new DataTable(2,stu2, tea1, room1);
+		DataTable d3 = new DataTable(3,stu3, tea1, room1);
+		DataTable d4 = new DataTable(4,stu4, tea2, room2);
+		DataTable d5 = new DataTable(5,stu5, tea2, room2);
+		DataTable d6 = new DataTable(6,stu6, tea2, room2);
+		DataTable d7 = new DataTable(7,stu7, tea3, room3);
+		DataTable d8 = new DataTable(8,stu8, tea3, room3);
+		DataTable d9 = new DataTable(9,stu9, tea3, room3);
+		DataTable d10 = new DataTable(10,stu10, tea5, room4);
+		DataTable d11 = new DataTable(11,stu11, tea5, room4);
+		DataTable d12 = new DataTable(12,stu12, tea5, room4);
+		DataTable d13= new DataTable(13,stu13, tea6, room4);
+		DataTable d14= new DataTable(14,stu14, tea6, room4);
+		
+		
+		DataDepot DB1 = new DataDepot();
+		
+		for (int i = 0; i < 14; i++) {
+			
+		}
+		
+		
+		
+		
+		
+		
+	}
+}

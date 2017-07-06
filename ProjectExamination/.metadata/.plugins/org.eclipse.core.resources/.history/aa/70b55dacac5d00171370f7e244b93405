@@ -1,0 +1,6 @@
+package com.ectumotech.upd.modell;
+
+public class DataDepot implements DataOper{
+	long dataAmount;
+	
+}

@@ -1,0 +1,47 @@
+package com.ectumotech.upd.uil;
+
+public class UIshow implements UI{
+
+	@Override
+	public void showWelcome() {
+		// TODO 自动生成的方法存根
+		
+	}
+
+	@Override
+	public void showUniversityInfo() {
+		// TODO 自动生成的方法存根
+		
+	}
+
+	@Override
+	public void showLogin() {
+		// TODO 自动生成的方法存根
+		
+	}
+
+	@Override
+	public void showLoginSuccess() {
+		// TODO 自动生成的方法存根
+		
+	}
+
+	@Override
+	public void shwoLoginFailure() {
+		// TODO 自动生成的方法存根
+		
+	}
+
+	@Override
+	public void showExit() {
+		// TODO 自动生成的方法存根
+		
+	}
+
+	@Override
+	public void showMenu(Menu menu) {
+		menu.show();	
+	}
+
+	
+}

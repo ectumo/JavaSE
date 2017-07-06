@@ -1,0 +1,20 @@
+package com.ectumotech.upd.uil;
+
+public class Menu{
+	MenuOption[] options;
+	
+	public Menu(MenuOption ...op){
+		options = new MenuOption[op.length];
+		int j = 0;
+		for(MenuOption i : op) {
+			options[j] = i;
+			j++;
+		}
+	}
+	
+	public void show() {
+		for(MenuOption i: options) {
+			i.showOption();
+		}	
+	}	
+}

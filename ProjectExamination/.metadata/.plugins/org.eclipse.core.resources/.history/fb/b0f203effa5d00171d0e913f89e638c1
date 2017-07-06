@@ -1,0 +1,11 @@
+package com.ectumotech.upd.modell;
+
+import javax.swing.text.AttributeSet.CharacterAttribute;
+
+public class Data extends DataTable{
+	String id;
+	
+	public void create(Object ...objects) {
+		
+	}
+}

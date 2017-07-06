@@ -1,0 +1,153 @@
+package com.ectumotech.upd;
+
+import java.awt.Choice;
+import java.awt.List;
+import java.util.ArrayList;
+
+import javax.management.loading.PrivateClassLoader;
+
+import com.ectumotech.upd.controll.MaintainaceOper;
+import com.ectumotech.upd.modell.ClassRoom;
+import com.ectumotech.upd.modell.Course;
+import com.ectumotech.upd.modell.Student;
+import com.ectumotech.upd.modell.Teacher;
+import com.ectumotech.upd.uil.Menu;
+import com.ectumotech.upd.uil.MenuOption;
+import com.ectumotech.upd.uil.UIshow;
+
+public class Initdata {
+	private static Menu main;
+	private static Menu subview;
+	private static Menu subTeacher;
+	private static Menu subStudent;
+	private static Student[] students;
+	private static Teacher[] teachers;
+	private static ClassRoom[] classRooms;
+	private static Course[] courses;
+	
+	public Initdata() {
+		initMenu();
+		initData();
+	}
+	public Initdata(String ...args) {
+		for (String choice : args) {
+			switch(choice) {
+			case "menu":
+			case "Menu":
+			case "菜单":
+				initMenu();
+				break;
+			case "data":
+			case "Data":
+			case "DATA":
+			case "数据":
+				initData();
+				break;
+			default:
+				
+			}
+		}
+	}
+	
+	
+	
+		public static Menu getMain() {
+		
+			return main;
+		}
+		
+		public static Menu getSubview() {
+			return subview;
+		}
+		
+		public static Menu getSubTeacher() {
+			return subTeacher;
+		}
+		
+		public static Menu getSubStudent() {
+			return subStudent;
+		}
+		
+		public void initMenu() {
+			MenuOption opback = new MenuOption(0,"返回上一层");
+			MenuOption opexit = new MenuOption(0,"退出数据库");
+			MenuOption opm1 = new MenuOption(1,"查看数据库信息");
+			MenuOption opm2 = new MenuOption(2,"查询数据库信息");
+			MenuOption opm3 = new MenuOption(3,"修改数据库信息");
+			MenuOption opm4 = new MenuOption(4,"保存数据库信息");
+			MenuOption opm5 = new MenuOption(5,"清空数据库信息");
+			MenuOption opm6 = new MenuOption(6,"下载数据库信息");
+			/**
+			 * 主菜单
+			 */
+			 main = new Menu(opm1,opm2,opm3,opm4,opm5,opm6,opexit);
+			/**
+			 * 查看子菜单
+			 */
+			MenuOption ops1 = new MenuOption(1,"查看所有老师");
+			MenuOption ops2 = new MenuOption(2,"查看所有学生");
+			MenuOption ops3 = new MenuOption(3,"查看所有班级");
+			subview = new Menu(ops1,ops2,ops3,opback);
+			/**
+			 * 教师子菜单
+			 */
+			MenuOption ops11 = new MenuOption(1,"新增老师");
+			MenuOption ops12 = new MenuOption(2,"辞退老师");
+			MenuOption ops13 = new MenuOption(3,"指定授课班级");
+			subTeacher = new Menu(ops11,ops12,ops13,opback);
+			/**
+			 * 学生子菜单
+			 */
+			MenuOption ops21 = new MenuOption(1,"新增学生");
+			MenuOption ops22 = new MenuOption(2,"劝退学生");
+			MenuOption ops23 = new MenuOption(3,"分配班级");
+			subStudent = new Menu(ops21,ops22,ops23,opback);
+		}
+		
+		public void initData() {
+			/**
+			 * 学生数据
+			 */
+			Student stu1 = new Student(1,"朱林", true);
+			Student stu2 = new Student(2,"冯永政", true);
+			Student stu3 = new Student(3,"袁文彬", true);
+			Student stu4 = new Student(4,"刘金祥", true);
+			Student stu5 = new Student(5,"韩亚男", true);
+			Student stu6 = new Student(6,"张克周", true);
+			Student stu7 = new Student(7,"余康康", true);
+			Student stu8 = new Student(8,"陈城 ", true);
+			Student stu9 = new Student(9,"陈超", true);
+			Student stu10 = new Student(10,"程炜 ", true);
+			Student stu11 = new Student(11,"林永青 ", true);
+			Student stu12 = new Student(12,"郭创创 ", true);
+			Student stu13 = new Student(13,"高俊辉 ", true);
+			Student stu14 = new Student(14,"杨勇 ", true);
+			/**
+			 * 老师数据
+			 */
+			Teacher tea1 = new Teacher(1,"陈齐", true);
+			Teacher tea2 = new Teacher(2,"马云", true);
+			Teacher tea3 = new Teacher(3,"马化腾", true);
+			Teacher tea4 = new Teacher(4,"李彦宏", true);
+			Teacher tea5 = new Teacher(5,"丁磊", true);
+			Teacher tea6 = new Teacher(6,"张朝阳", true);
+			/**
+			 * 教室数据
+			 */
+			ClassRoom room1 = new ClassRoom("JAVA培训基础班");
+			ClassRoom room2 = new ClassRoom("JAVA培训高级班");
+			ClassRoom room3 = new ClassRoom("JAVA培训极限班");
+			ClassRoom room4 = new ClassRoom("JAVA培训终极班");
+			
+			/**
+			 * 课程数据
+			 */
+			Course c1 = new Course("JavaSE");
+			Course c2 = new Course("JavaEE");
+			Course c3 = new Course("Oracle");
+			Course c4 = new Course("HTML");
+			Course c5 = new Course("CSS");
+			Course c6 = new Course("JavaScript");
+			Course c7 = new Course("JQuery");
+		}
+}

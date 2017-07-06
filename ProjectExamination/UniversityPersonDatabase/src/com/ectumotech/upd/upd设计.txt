@@ -1,0 +1,43 @@
+
+
+UI接口 
+welcome
+universityinfo
+Login
+Login success
+Login failure
+exit
+menu
+
+personinfo
+teacherinfo
+studentinfo
+principalinfo
+
+MaintainaceOper接口
+add
+del
+modify
+search
+statuscheck
+
+DataOper接口
+saveDBdata
+addDBdata
+delDBdata
+emptyDBdata
+
+downloadTeacherInfo
+downloadStudentInfo
+
+方法及变量命名
+
+主菜单 main
+查看子菜单 subview
+教师子菜单 subTec
+学生子菜单 subStu
+
+雷军
+
+隔壁老王
+

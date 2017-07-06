@@ -1,0 +1,24 @@
+package com.ectumotech.upd;
+
+import com.ectumotech.upd.uil.UIshow;
+
+public class TestUPD {
+	public static void main(String[] args) {
+		/**
+		 * 初始化数据
+		 */
+		Initdata initdata = new Initdata();
+		
+		/**
+		 * 测试显示菜单
+		 */
+		UIshow UPD = new UIshow();
+		UPD.showMenu(initdata.getMain());
+		UPD.showMenu(initdata.getSubview());
+		UPD.showMenu(initdata.getSubTeacher());
+		UPD.showMenu(initdata.getSubStudent());	
+		
+		
+		
+	}
+}

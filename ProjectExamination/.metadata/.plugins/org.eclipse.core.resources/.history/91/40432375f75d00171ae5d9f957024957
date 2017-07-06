@@ -1,0 +1,28 @@
+package com.ectumotech.upd.modell;
+
+public class DataTable extends DataDepot{
+	int id;
+	Student student;
+	Teacher teacher;
+	StudyPlace classRoom;
+	
+
+	
+	public DataTable(int id, Student student, Teacher teacher, StudyPlace classRoom) {
+		super();
+		this.id = id;
+		this.student = student;
+		this.teacher = teacher;
+		this.classRoom = classRoom;
+	}
+
+	void showAll(){
+		System.out.format("%-4d%-10s%-4s%-10s%-4s%10s",
+				id,
+				student.getName(),
+				student.getStatus(),
+				teacher.getName(),
+				teacher.getStatus(),
+				classRoom.getID());
+	}
+}

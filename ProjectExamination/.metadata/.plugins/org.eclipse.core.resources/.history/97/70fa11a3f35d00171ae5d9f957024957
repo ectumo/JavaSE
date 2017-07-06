@@ -1,0 +1,42 @@
+package com.ectumotech.upd;
+
+import com.ectumotech.upd.uil.Menu;
+import com.ectumotech.upd.uil.MenuOption;
+import com.ectumotech.upd.uil.UIshow;
+
+public class TestUI {
+	public static void main(String[] args) {
+		Initdata.initUI();
+		
+		
+		/**
+		 * ≤‚ ‘œ‘ æ≤Àµ•
+		 */
+		
+		UIshow UPD = new UIshow();
+		UPD.showMenu(main);
+		UPD.showMenu(subview);
+		UPD.showMenu(subTeacher);
+		UPD.showMenu(subStudent);
+
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+		
+
+	
+	
+}
